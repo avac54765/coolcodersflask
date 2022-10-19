@@ -1,17 +1,17 @@
 version: '3'
 services:
         web:
-                image: flask_port_v1
+                image: flask_coolcoders_v1
                 build: .
                 ports:
-                        - "8086:8080"
+                        - "8046:8080"
                 volumes:
                         - persistent_volume:/app/volumes
-                restart: unless-stopped
+                        
 volumes:
   persistent_volume:
     driver: local
     driver_opts:
       o: bind
       type: none
-      device: /home/ubuntu/flask_portfolio/volumes
+      device: /home/ubuntu/coolcodersflask/volumes
