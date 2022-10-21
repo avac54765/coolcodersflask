@@ -11,4 +11,5 @@ advice_list = [
     "Keep track of your costmers' names, sizes, and orders",
     "Try your best! Don't be afraid to try new things",
     "Name your designs unique names so you can easily identify them",
+    "Surround yourself with hard workers and people with different talents"
 ]
