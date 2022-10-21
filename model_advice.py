@@ -13,5 +13,4 @@ advice_list = [
     "Name your designs unique names so you can easily identify them",
     "Surround yourself with hard workers and people with different talents"
 
-    
 ]
