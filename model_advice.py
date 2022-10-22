@@ -14,3 +14,4 @@ advice_list = [
     "Surround yourself with hard workers and people with different talents"
     
 ]
+
