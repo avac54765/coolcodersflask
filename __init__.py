@@ -3,6 +3,7 @@ from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from model_jokes import initJokes
+from model_stock import initStocks
 
 """
 These object can be used throughout project.
@@ -24,3 +25,6 @@ Migrate(app, db)
 def activate_job():
     initJokes()
     
+@app.before_first_request
+def activate_job():
+    initStocks()   
