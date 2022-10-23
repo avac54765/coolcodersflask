@@ -10,7 +10,7 @@ stock_api = Blueprint('stock_api', __name__,
 
 api = Api(stock_api)
 
-class stockapi:
+class StockApi:
     # not implemented
     class _Create(Resource):
         def post(self, item):
@@ -51,7 +51,7 @@ class stockapi:
         
 if __name__ == "__main__": 
     # server = "http://127.0.0.1:5000" # run local
-    server = 'https://coolcoders.nighthawkscrums.gq' # run from web
+    server = 'https://coolcoders.nighthawkcodescrums.gq' # run from web
     url = server + "/api/stocks"
     responses = []  # responses list
 
