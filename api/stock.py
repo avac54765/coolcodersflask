@@ -17,10 +17,10 @@ class StockApi:
             pass
 
          
-    # get getStock
+    # get getStocks
     class _Read(Resource):
         def get(self):
-            return jsonify(getStock())
+            return jsonify(getStocks())
 
     
     # getStock(id)
@@ -50,8 +50,8 @@ class StockApi:
     
         
 if __name__ == "__main__": 
-    # server = "http://127.0.0.1:5000" # run local
-    server = 'https://coolcoders.nighthawkcodescrums.gq' # run from web
+    server = "http://127.0.0.1:5000" # run local
+    # server = 'https://coolcoders.nighthawkcodescrums.gq' # run from web
     url = server + "/api/stocks"
     responses = []  # responses list
 
@@ -66,14 +66,13 @@ if __name__ == "__main__":
         requests.get(url+"/"+num)  # read item by id
         ) 
     responses.append(
-        requests.put(url+"/quanitity/"+num) # quantity to count URL
-        ) 
-    
-    # obtain a random item
-    responses.append(
-        requests.get(url+"/random")  # list a random item
+        requests.put(url+"/quantity/"+num) # quantity to count URL
         ) 
 
+    responses.append(
+        requests.get(url+"/")  # testing all stock items
+        ) 
+    
     # cycle through responses
     for response in responses:
         print(response)

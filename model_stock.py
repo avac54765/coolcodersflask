@@ -22,7 +22,7 @@ def initStocks():
 
     
 # Return all items from stock_data
-def getStock():
+def getStocks():
     return(stock_data)
 
 # Item getter
