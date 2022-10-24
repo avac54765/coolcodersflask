@@ -6,7 +6,7 @@ stock_list = [
     "Napping in the Nest Grey Pants",
     "Napping in the Nest PJ Pants",
     "Take Flight Hoodie",
-    "Nighthawk North T-Shirt"
+    "Nighthawk North T-Shirt",
 ]
 
 # Initialize stocks
