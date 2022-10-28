@@ -1,5 +1,4 @@
 name: GitHub Actions
-run-name: ${{ github.actor }} is making the change
 on: [push]
 jobs:
   Explore-GitHub-Actions:
