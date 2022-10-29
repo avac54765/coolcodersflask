@@ -39,7 +39,8 @@ def countStocks():
 
 # Lower quantity by 1
 def SubtractStockQuantity(id):
-    stock_data[id]['quantity'] = stock_data[id]['quantity'] - 1
+    if stock_data[id]['quantity'] > 0:
+        stock_data[id]['quantity'] = stock_data[id]['quantity'] - 1
     return stock_data[id]['quantity']
 
 
