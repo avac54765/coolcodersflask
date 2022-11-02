@@ -12,7 +12,7 @@ stock_list = [
 # Initialize stocks
 def initStocks():
     # setup stocks into a dictionary with id, name, description, quantity left of item
-    item_id = 1
+    item_id = 0
 
     for item in stock_list:
         stock_data.append({"id": item_id, "item": item, "quantity": random.randint(1, 100)}) #we chose to randomize the quantity to show purpose of the function
