@@ -1,6 +1,7 @@
 import random
 
 orders_list = [
+    "Sam Smith"
 
 ]
 
