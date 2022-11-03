@@ -1,7 +1,7 @@
 import random
 
 orders_list = {
-    "sam":{"item":"hoodie", "Quantity":2}
+    {"customer":"sam", "item":"hoodie", "Quantity":2}
 }
 
 print(orders_list["sam"]["Quantity"])
