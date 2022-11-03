@@ -53,14 +53,6 @@ if __name__ == "__main__":
     count_json = count_response.json()
     count = count_json['count']
 
-    # update quantity test sequence
-    num = str(random.randint(0, count-1)) # test a random item
-    responses.append(
-        requests.get(url+"/"+num)  # read item by id
-        ) 
-    responses.append(
-        requests.put(url+"/quantity/"+num) # quantity to count URL
-        ) 
 
     responses.append(
         requests.get(url+"/")  # testing all stock items
