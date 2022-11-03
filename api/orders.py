@@ -15,9 +15,8 @@ class OrdersApi:
 
     # addOrder
     class _Add(Resource):
-     def post(self, order):
-        addOrder(order)
-        pass
+     def get(self, customer, item, quantity):
+        return jsonify(addOrder(customer, item, quantity))
     
 
          
@@ -37,7 +36,8 @@ class OrdersApi:
 
 
     # building RESTapi resources/interfaces, these routes are added to Web Server
-    api.add_resource(_Add, '/addorder/<string:order>')
+    # coolcoders.nighthawkcodescrums.gq/api/orders/addorder/sam/hoodie/3
+    api.add_resource(_Add, '/addorder/<string:customer>/<string:item>/<int:quantity>')
     api.add_resource(_Read, '/')
     api.add_resource(_ReadCount, '/count')
     

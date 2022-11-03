@@ -1,17 +1,19 @@
 import random
 
-orders_list = [
-    
+orders_list = {
+    "sam":{"item":"hoodie", "Quantity":2}
+}
 
-]
-
+print(orders_list["sam"]["Quantity"])
 
 
     
 
 # adding an order from frontend
-def addOrder(order):
-    orders_list.append(order)
+def addOrder(customer, item, quantity):
+    if customer not in orders_list.keys():
+        orders_list[customer] = {"item":item,"Quantity":quantity}
+    return {customer:{"item":item, "Quantity":quantity}}
 
 # Return all items from orders_data
 def getOrders():
@@ -25,6 +27,8 @@ def printOrder(order):
 # Number of items
 def countOrders():
     return len(orders_list)
+
+addOrder("jerry", "shirt", 3)
 
 
 
