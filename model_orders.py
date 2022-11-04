@@ -1,13 +1,12 @@
 import random
 
 orders_list = {
-    "Sam":{"item":"hoodie", "Quantity":2}
+    "sam":{"item":"hoodie", "Quantity":2}
 }
 
-print(orders_list["item"]["Quantity"])
+print(orders_list["sam"]["Quantity"])
 
 
-    
 
 # adding an order from frontend
 def addOrder(customer, item, quantity):
