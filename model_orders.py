@@ -4,7 +4,7 @@ orders_list = {
     "Sam":{"item":"hoodie", "Quantity":2}
 }
 
-print(orders_list["sam"]["Quantity"])
+print(orders_list["Sam"]["Quantity"])
 
 
     
